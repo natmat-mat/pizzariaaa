@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio da Pizzaria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:  #388e3c;
+            color: #333;
+        }
+        header {
+            background-color: #d32f2f; /* Vermelho */
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: white; 
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .pizza-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .pizza-item {
+            background-color: black; 
+            border: 5px solid white; /* Verde */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 8px;
+            width: 16%;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+        .pizza-item img {
+            width: 100%;
+            border-bottom: 2px solid #388e3c; /* Verde */
+        }
+        .pizza-item h3 {
+            margin: 10px 0;
+            color: #d32f2f; /* Vermelho */
+        }
+        .pizza-item p {
+            color: #388e3c;
+        }
+        .pizza-item:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #d32f2f; /* Vermelho */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pizzas Natalin</h1>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+    </nav>
+    <div class="container">
+        <div class="pizza-list">
+            <div class="pizza-item">
+                <img src="margeritta.jpg" alt="Margherita">
+                <h3>Margherita</h3>
+                <p>R$ 30,00</p>
+            </div>
+            <div class="pizza-item">
+                <img src="pepperoni.jpg" alt="Pepperoni">
+                <h3>Pepperoni</h3>
+                <p>R$ 35,00</p>
+            </div>
+            <div class="pizza-item">
+                <img src="quatro queijos.jpg" alt="Quatro Queijos">
+                <h3>Quatro Queijos</h3>
+                <p>R$ 38,00</p>
+            </div>
+            <div class="pizza-item">
+                <img src="frango com catupiry.jpg" alt="Frango com Catupiry">
+                <h3>Frango com Catupiry</h3>
+                <p>R$ 36,00</p>
+            </div>
+            <div class="pizza-item">
+                <img src="calabresa.jpg" alt="Calabresa">
+                <h3>Calabresa</h3>
+                <p>R$ 33,00</p>
+            </div>
+            <div class="pizza-item">
+                <img src="cogumelos.jpg" alt="cogumelos">
+                <h3>Cogumelos</h3>
+                <p>R$ 37,00</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Pizzas Natalin. Todos os direitos reservados.
+    </footer>
+  </body>
+</html>
